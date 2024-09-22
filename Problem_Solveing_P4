@@ -1,0 +1,22 @@
+/* Wap a C program to print this pattern
+A
+BB
+CCC
+DDDD */
+#include <stdio.h>
+
+int main() {
+    int row;//number of line
+    scanf("%d",&row);
+     // Start with the letter 'A'
+    for (int i = 0; i < row; i++) { // Loop for n rows
+        char ch = 'A' + i; // Determine the character for the current row
+        for (int j = 0; j <= i; j++) { // Loop to print characters in the current row
+            printf("%c", ch); // Print the current character
+        }
+        printf("\n"); // Move to the next line after each row
+    }
+    
+    return 0;
+
+}
