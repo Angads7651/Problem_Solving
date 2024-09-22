@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char ch = 'A'; // Start with the letter 'A'
+    
+    for (int i = 1; i <= 4; i++) { // Loop for 4 rows
+        for (int j = 1; j <= i; j++) { // Loop to print letters in the current row
+            printf("%c", ch); // Print the current character
+            ch++; // Move to the next character
+        }
+        printf("\n"); // Move to the next line after each row
+    }
+    
+    return 0; // Indicate that the program ended successfully
+}
