@@ -1,1 +1,21 @@
+/* Wap a C program to print this pattern
+1
+23
+456
+78910  */
+
+#include <stdio.h>
+
+int main() {
+    int num ;//no of line to print
+    int p=1;
+    scanf("%d",&num);
+    for (int i = 1; i <= num; i++) { // Loop for each row (1 to num)
+        for (int j = 1; j <= i; j++) { // Loop runs from 1 to i
+            printf("%d", p++); // Print the current number
+        }
+        printf("\n");
+    }
+    return 0;
+}
 
