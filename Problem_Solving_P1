@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int main() {
-    int rows; // enter any number for 
+    int rows; // enter any no of row 
 
     printf("Enter the number of rows: ");
     scanf("%d", &rows);
