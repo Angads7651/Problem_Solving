@@ -1,0 +1,25 @@
+/* Wap a C program to print this pattern
+F
+EF
+DEF
+CDEF
+BCDEF
+ABCDEF */
+#include <stdio.h>
+
+int main() {
+    int rows = 6; // Total number of rows
+    
+    for (int i = 0; i < rows; i++) { // Loop for each row
+        char ch = 'F'; // Start from 'F' for each row
+        
+        for (int j = 0; j <= i; j++) {
+            printf("%c", ch - j);
+        }
+        
+        printf("\n");
+    }
+    
+    return 0;
+}
+
